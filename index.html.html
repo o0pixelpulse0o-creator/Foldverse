@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoldVerse | Where Paper Comes Alive</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:4rem;
+}
+
+header p{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:white;
+    color:#1e3c72;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+nav{
+    background:#0f172a;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:30px;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+.team{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.member{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.member h3{
+    color:#2563eb;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    max-width:700px;
+    margin:auto;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.highlight{
+    color:#2563eb;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FoldVerse</h1>
+    <p>Where Paper Comes Alive</p>
+    <a href="#products" class="btn">Explore Our Products</a>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#booklet">DIY Booklet</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About FoldVerse</h2>
+
+    <div class="about">
+        FoldVerse is a student business that transforms ordinary paper into
+        amazing 3D creations. We create handmade crafts, decorative models,
+        pop-up cards, desk accessories and educational projects.
+
+        <br><br>
+
+        Our goal is to combine creativity, design, innovation and business
+        skills while creating products that are affordable, eco-friendly and
+        visually impressive.
+    </div>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>🦁 3D Animal Models</h3>
+            <ul>
+                <li>Lion</li>
+                <li>Deer</li>
+                <li>Panda</li>
+                <li>Fox</li>
+                <li>Elephant</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🎉 Pop-Up Cards</h3>
+            <ul>
+                <li>Birthday Cards</li>
+                <li>Thank You Cards</li>
+                <li>Congratulations Cards</li>
+                <li>Teacher Appreciation Cards</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🪴 Desk Decorations</h3>
+            <ul>
+                <li>Pencil Holders</li>
+                <li>Mini Plants</li>
+                <li>Phone Stands</li>
+                <li>Desk Organizers</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🏛 Landmark Models</h3>
+            <ul>
+                <li>Eiffel Tower</li>
+                <li>Burj Khalifa</li>
+                <li>Big Ben</li>
+                <li>Taj Mahal</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="booklet">
+    <h2>DIY Instruction Booklet</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>⭐ Beginner</h3>
+            <ul>
+                <li>Basic Folding</li>
+                <li>Simple Shapes</li>
+                <li>Paper Flowers</li>
+                <li>Mini Crafts</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>⭐⭐ Intermediate</h3>
+            <ul>
+                <li>Pop-Up Cards</li>
+                <li>Desk Organizers</li>
+                <li>Animal Models</li>
+                <li>Decorative Projects</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>⭐⭐⭐ Advanced</h3>
+            <ul>
+                <li>Landmarks</li>
+                <li>Large Sculptures</li>
+                <li>Complex Structures</li>
+                <li>Showpiece Models</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="team">
+    <h2>Our Team</h2>
+
+    <div class="team">
+
+        <div class="member">
+            <h3>Arjun</h3>
+        </div>
+
+        <div class="member">
+            <h3>Anushri</h3>
+        </div>
+
+        <div class="member">
+            <h3>Umair</h3>
+        </div>
+
+        <div class="member">
+            <h3>Aadya</h3>
+        </div>
+
+        <div class="member">
+            <h3>Vedant</h3>
+        </div>
+
+        <div class="member">
+            <h3>Abel</h3>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact FoldVerse</h2>
+
+    <div class="contact-box">
+        <p>
+            Scan our QR code during the exhibition to access our
+            product catalog, DIY booklet and ordering information.
+        </p>
+
+        <br>
+
+        <p class="highlight">
+            Thank you for supporting creativity, innovation and handmade art.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <h3>FoldVerse</h3>
+    <p>Where Paper Comes Alive</p>
+    <p>School Business Project</p>
+</footer>
+
+</body>
+</html>
